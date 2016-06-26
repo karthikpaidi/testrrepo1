@@ -1,3 +1,4 @@
+//this java code will create a html file and append hello world string to it
 import static java.nio.file.StandardOpenOption.*;
 import java.nio.file.*;
 import java.io.*;
