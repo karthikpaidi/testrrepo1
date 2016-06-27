@@ -9,7 +9,7 @@ public class LogFileTest {
 
     // Convert the string to a
     // byte array.
-    String s = “Hello World is after ip change”;
+    String s = "Hello World! ";
     byte data[] = s.getBytes();
     Path p = Paths.get("./karthik.html");
 
