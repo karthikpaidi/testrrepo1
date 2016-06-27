@@ -9,7 +9,7 @@ public class LogFileTest {
 
     // Convert the string to a
     // byte array.
-    String s = "Hello World!this is first change";
+    String s = "Hello World!this is git client change";
     byte data[] = s.getBytes();
     Path p = Paths.get("./karthik.html");
 
