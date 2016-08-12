@@ -11,5 +11,6 @@ node ('master')
     sh 'docker rmi -f finale'
     stage 'build new docker images'
     sh 'docker build -t finale /dockerbuilds/.'
+    sleep time: 1, unit: 'MINUTES'
 
 }
