@@ -6,7 +6,7 @@ node ('master')
     stage 'clone git repo'
     sh 'git clone https://github.com/karthikpaidi/testrrepo1.git'
     stage 'copy to dockerbuild directory'
-    sh 'cp /var/lib/jenkins/workspace/pipecode/testrrepo1/karthik.html /dockerbuilds'
+    sh 'cp testrrepo1/karthik.html /dockerbuilds'
     stage 'Remove old docker images'
     sh 'docker rmi -f finale'
     stage 'build new docker images'
