@@ -10,5 +10,4 @@ node ('master')
     stage 'build new docker images'
     sh 'docker build -t finale /dockerbuilds/.'
     
-
 }
