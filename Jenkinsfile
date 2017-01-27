@@ -9,5 +9,6 @@ node ('master')
     sh 'cp testrrepo1/karthik.html /dockerbuilds'
     stage 'build new docker images'
     sh 'docker build -t finale /dockerbuilds/.'
+    stage 'bye'
     
 }
