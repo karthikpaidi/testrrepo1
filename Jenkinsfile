@@ -1,6 +1,6 @@
 node ('master')
 {
-
+    git poll: true, url: 'https://github.com/karthikpaidi/testrrepo1/blob/karthik-new-paidi/Jenkinsfile'
     stage 'delete all existing file'
     sh 'rm -rf *'
     stage 'clone git repo'
