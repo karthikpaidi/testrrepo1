@@ -1,6 +1,7 @@
 node ('master')
 {
 
+    git poll: true, url: 'https://github.com/karthikpaidi/testrrepo1.git'
     stage 'delete all existing file'
     sh 'rm -rf *'
     stage 'clone git repo'
