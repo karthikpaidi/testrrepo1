@@ -8,6 +8,5 @@ node ('master')
     stage 'copy to dockerbuild directory'
     sh 'cp testrrepo1/karthik.html /dockerbuilds'
     stage 'build new docker images'
-    sh 'docker build -t finale /dockerbuilds/.'
-    
+    sh 'sudo docker build -t finale /dockerbuilds/.' 
 }
