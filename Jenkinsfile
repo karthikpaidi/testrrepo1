@@ -11,7 +11,7 @@ node ('master')
     stage 'build new docker images'
     sh 'sudo docker build -t finale /dockerbuilds/.' 
     stage 'artifactory'
-    def server = Artifactory.newServer url: 'http://35.160.144.59:8081/artifactory', username: 'admin', password: 'Karthik@546'
+    def server = Artifactory.newServer url: 'http://35.160.144.59:8081/artifactory', username: 'random', password: 'random123'
     def buildInfo = Artifactory.newBuildInfo()
     buildInfo.env.capture = true
     server.publishBuildInfo(buildInfo)
