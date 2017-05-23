@@ -10,4 +10,9 @@ node ('master')
     sh 'cp testrrepo1/karthik.html /dockerbuilds'
     stage 'build new docker images'
     sh 'sudo docker build -t finale /dockerbuilds/.' 
+    stage 'artifactory'
+    def server = Artifactory.newServer url: 'http://35.160.144.59:8081/artifactory', username: 'rand', password: 'Rand123'
+    def buildInfo = Artifactory.newBuildInfo()
+    buildInfo.env.capture = true
+    server.publishBuildInfo(buildInfo)
 }
